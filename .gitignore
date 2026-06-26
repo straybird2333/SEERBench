@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+.idea/
+.vscode/
+.venv/
+venv/
+
+# Runtime outputs
+results/
+Eval/**/results/
+web_segmentation_results/
+segmentation_results/
+
+# Large data artifacts are published as release assets, not Git blobs.
+data/
+release_assets/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.part-*
+
+# Local model checkpoints
+/models/
+/Model/
+/Models/
+/fjh/

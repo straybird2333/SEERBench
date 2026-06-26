@@ -1,0 +1,10 @@
+# 依赖与 Eval_final 一致，额外需要 transformers / torch 用于本地模型
+# InternVL 等 trust_remote_code 模型需要 einops
+# 旧版 DeepSeek-VL (deepseek-vl-7b multi_modality) 需安装: pip install git+https://github.com/deepseek-ai/DeepSeek-VL.git
+torch>=2.0.0
+transformers>=4.45.0
+accelerate>=0.20.0
+einops
+Pillow
+PyYAML
+qwen-vl-utils>=0.0.11

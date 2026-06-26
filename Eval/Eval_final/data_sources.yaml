@@ -1,0 +1,57 @@
+# 数据源配置文件
+# 定义各个数据源的路径、适配器和任务映射关系
+
+data_sources:
+  # Benchmark任务数据源（来自 Benchmark_annotations）
+  benchmark_tasks:
+    file_path: "../../Benchmark_annotations"
+    adapter: "BenchmarkTaskAdapter"
+    tasks:
+      # 基础任务（单文件）
+      - camera_wearer           # Camera_Wearer.json - 单选题
+      - camera_wearer_type2     # Camera_Wearer_Type2.json - 单选题
+      - ego_2_exo_visibility    # Ego2Exo_Visibility.json - 单选题
+      - camera_relative_position # Camera_Relative_Position.json - 单选题
+      - relative_distance       # Relative_Distance.json - 单选题
+      - object_relative_position # Object_Relative_Position.json - 单选题
+      - object_correspondence   # Object_Correspondence.json - 单选题
+      - object_prediction       # Object_Prediction.json - 单选题
+      # View_Movement 系列
+      - view_movement_1         # View_Movement_1.json - 多选题
+      - view_movement_2         # View_Movement_2.json - 多选题
+      - view_movement_3         # View_Movement_3.json - 单选题
+      - view_movement_4         # View_Movement_4.json - 单选题
+      - view_movement_5         # View_Movement_5.json - 单选题
+      - view_movement_6         # View_Movement_6.json - 单选题
+      # Object_Movement 系列
+      - object_movement         # Object_Movement.json - 单选题
+      - object_movement_1       # Object_Movement_1.json - 多选题
+      # View_Selection 任务
+      - view_selection          # View_Selection.json - 单选题
+      - view_selection_2        # View_Selection_2.json - 单选题
+      - view_selection_3       # View_Selection_3.json - 单选题
+      - noise_collaboration     # Noise_Collaboration.json - 不定项
+    description: "Benchmark标注数据（每个文件独立评测）"
+
+# 任务到数据源的映射（用于快速查找）
+task_to_source:
+  camera_wearer: benchmark_tasks
+  camera_wearer_type2: benchmark_tasks
+  ego_2_exo_visibility: benchmark_tasks
+  camera_relative_position: benchmark_tasks
+  relative_distance: benchmark_tasks
+  object_relative_position: benchmark_tasks
+  object_correspondence: benchmark_tasks
+  object_prediction: benchmark_tasks
+  view_movement_1: benchmark_tasks
+  view_movement_2: benchmark_tasks
+  view_movement_3: benchmark_tasks
+  view_movement_4: benchmark_tasks
+  view_movement_5: benchmark_tasks
+  view_movement_6: benchmark_tasks
+  object_movement: benchmark_tasks
+  object_movement_1: benchmark_tasks
+  view_selection: benchmark_tasks
+  view_selection_2: benchmark_tasks
+  view_selection_3: benchmark_tasks
+  noise_collaboration: benchmark_tasks
