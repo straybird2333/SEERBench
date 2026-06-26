@@ -6,7 +6,7 @@ This repository currently provides the evaluation code. The benchmark data will 
 
 ## Data
 
-Baidu Netdisk: `TODO: add link here`
+Baidu Netdisk: [link](https://pan.baidu.com/s/1zpVB8S28Jpfl2mTs76_hiA?pwd=w47n), w47n
 
 Expected layout after downloading and extracting the data:
 
