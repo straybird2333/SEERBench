@@ -1,6 +1,6 @@
 # Data Organization
 
-The first code release does not include data. The benchmark data should be packaged and published separately, grouped by role:
+The first code release does not include data. The benchmark data should be packaged separately for Baidu Netdisk.
 
 ## 1. Annotations
 
@@ -63,9 +63,9 @@ Do not include these in public data packages:
 - Raw full video dumps unless explicitly intended for release.
 - Personal questionnaire submissions or other non-public annotation metadata.
 
-## 5. Suggested External Release
+## 5. Suggested Netdisk Release
 
-For a netdisk release, use separate packages:
+Recommended packages:
 
 ```text
 seerbench_annotations.tar.gz
@@ -76,3 +76,8 @@ checksums.sha256
 
 Keep `checksums.sha256` next to the archives so users can verify downloads.
 
+The README has a reserved field:
+
+```text
+Baidu Netdisk: TODO: add link here
+```
